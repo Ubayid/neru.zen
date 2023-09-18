@@ -1,0 +1,447 @@
+@import url('https://fonts.cdnfonts.com/css/planet-comic');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:opsz@6..12&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/milky-nice');
+
+:root{
+    --primaryColor: #FFB900;
+    --primaryhover: #d09d11;
+
+    --sectionPadding: 4rem 0;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat";
+}
+
+p{
+    font-size: 1rem;  /*16px*/
+    line-height: 1.9rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.main-container{
+    width: 1800px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1800px){
+    .main-container{
+        width: 90%;
+    }
+}
+
+.sub-title{
+    color:#919191;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    padding-bottom: 1.5rem;
+}
+
+.sec-title{
+    padding-bottom: 1rem;
+    font-size: 3.7rem ;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Layout */
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*biar responsive*/
+    gap: 0.6rem;
+}
+
+/* logo and navigation menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.logo a{
+    color: var(--primaryColor);
+    font-family:'Planet Comic', sans-serif;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a{
+    color: var(--primarytextColor);
+    transition: 0.2s ease-in-out;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+nav ul li a:hover{
+    color: var(--primaryColor);
+    transition: all;
+}
+
+.nav .btn-lg{
+    display: flex;
+    align-items: center;
+    position: relative;  
+}
+
+.nav .btn-lg button{
+    width: 90px;
+    font-size: 17px;
+    padding: 7px;
+    border-radius: 35.52px;
+    font-family:'Planet Comic', sans-serif;
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.nav .btn-lg button:hover{
+    background-color: var(--primaryhover);
+}
+
+/* burger */
+.burger div{
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background-color: #000;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.burger{
+    display: none;
+    z-index: 99;
+    position: fixed;
+    top: 6px;
+    right: 35px;
+} 
+
+/* me section */
+#me{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.me-left{
+    padding-left: 4.2rem;
+}
+
+#me .me-left .pre-title{
+    color: var(--primaryColor);
+    font-weight:700;
+    font-size: 21px;
+    line-height: 25px;   
+}
+
+#me .me-left .title{
+    font-size: 6.5rem;
+    font-weight: 600;
+}
+
+#me .me-left .sub-me{
+    padding-top: 1rem;
+    font-size: 32px;
+    padding-right: 2rem;
+    color: #919191;
+    font-weight: 600;
+}
+
+#me .me-left .find{
+    display: flex;   
+    align-items: center;
+    text-align: center;
+    padding-top: 1.3rem;
+}
+
+#me .me-left .find button{
+    height: 50px;
+    width: 155px;
+    font-size: 18px;
+    font-family:'Planet Comic', sans-serif;
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#me .me-left .find button:hover{
+    background-color: var(--primaryhover);
+}
+
+.me-right img{
+    width:100%;
+}
+
+.me-right{
+    display: flex;
+    justify-content: center;
+}
+
+/* Service section */
+#why{
+    padding: var(--sectionPadding)
+}
+
+.why-title{
+    text-align: center;
+    padding-top: 0;
+}
+
+.why{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--primaryBackgroundColor);
+    border-radius: var(--itemBorderRadius);
+}
+
+.why p{
+   font-weight: 600;
+   text-align: center;
+   line-height: 25px;
+   font-size: 20px;
+}
+
+.why h4 {
+    padding:1rem;
+    font-size: 3rem ;
+    text-align: center;
+    font-weight: 700;
+}
+
+.why-img{
+    background: var(--primaryColor);
+    border-radius: 20px;
+    padding: 3rem 0;
+}
+
+.why-img img{
+    fill: var(--primaryiconcolor);
+    width: 100%;
+}
+
+/* service section */
+#service{
+    padding: var(--sectionPadding);
+}
+
+
+#service .container h3{
+    padding-bottom: 3rem;
+}
+
+.services{
+    background-color: var(--primaryColor);
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+.grid-ser{
+    padding: 3.5rem 10rem;
+}
+
+.grid-ser .service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+    padding-bottom: 3.5rem;
+}
+
+.ser-left{
+    display: flex;
+    justify-content: end;
+    padding-right: 4rem;
+}
+
+.ser-left img{
+    width: 50%;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+}
+
+.ser-left .ser-img3{
+    padding: 4.5rem 0;
+}
+
+.p1{
+    padding-right: 12rem;
+}
+
+.p2{
+    padding-right: 10rem;
+}
+
+.ser-right h2{
+    font-weight: 700;
+    font-size: 3.5rem;
+    padding-right: 12rem;
+}
+
+.ser-right p{
+    font-weight: 500;
+    font-size: 28px;
+    padding-top: 2.5rem;
+    line-height: 35px;
+}
+
+.ser-right p span{
+    font-weight: 800;
+}
+
+/* skills */
+#aa{
+    padding: var(--sectionPadding);
+    background: var(--secondaryBackgroundColor);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: center;
+}  
+
+.aa-left img{
+    width:90%;
+}
+
+.aa-left{
+    display: flex;
+    justify-content: center;
+}
+
+.aa-right{
+    padding: 8rem;
+}
+
+#aa .aa-right .title{
+    font-size: 5rem;
+    font-weight: 500;
+    font-family: 'Milky Nice', sans-serif;
+    color: var(--primaryColor);
+    line-height: 4.5rem;
+}
+
+#aa .aa-right p{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    padding-right: 3rem;
+}
+
+#aa .aa-right .find{
+    display: flex;   
+    align-items: center;
+    text-align: center;
+    padding-top: 1.3rem;
+}
+
+#aa .aa-right .find button{
+    height: 65px;
+    width: 215px;
+    font-size: 26px;
+    font-family:'Planet Comic', sans-serif;
+    background-color: var(--primaryColor);
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    transition: 0.2s ease-in-out;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#aa .aa-right .find button:hover{
+    background-color:var(--primaryhover)
+}
+
+/* footer */
+footer{
+    padding: var(--sectionPadding);
+    background-color: var(--primaryColor);
+    text-align: center;
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    box-shadow: 0 0 11px 2px rgba(0, 0, 0, 0.5);
+}
+
+footer .foot{
+    display: grid;
+    grid-template-columns:repeat(2, auto);
+    padding: 0 10rem;
+}
+
+.l{
+    line-height: 6rem;
+    align-self: center;
+}
+
+.l h1{
+    font-family: 'Milky Nice', sans-serif;
+    font-size: 6rem;
+    text-align: start;
+    font-weight: 500;
+}
+
+.l p{
+    font-weight: 700;
+    text-align: start;
+}
+
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5rem;
+    gap: 7rem;
+}
+
+ul{
+    line-height: 5rem;
+}
+
+ul .title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.m ul li, .r ul li{
+    text-align: start;
+}
+
+.m ul li a, .r ul li a{
+    font-size: 2.5rem;
+    color: #000;
+}

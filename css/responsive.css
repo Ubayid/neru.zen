@@ -1,0 +1,285 @@
+@media screen and (max-width: 1200px) {
+
+    .grid-2{
+        gap: 1rem;
+    }
+
+    .nav ul{
+        gap: 8.5rem;
+    }
+
+    .nav ul li a{
+        font-size: 20px;
+    }
+
+    #me .me-left .pre-title{
+        font-size: 16px;
+    }
+
+    #me .me-left .title{
+        font-size: 3.5rem;
+        padding-right: 3rem;
+    }
+
+    #me .me-left .sub-me{
+        font-size: 18px;
+    }
+
+    #me .me-left .find button{
+        height: 40px;
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .sec-title{
+        font-size: 2.7rem;
+    }
+
+    .sub-title{
+        font-size: 25px;   
+    }
+
+    .why h4{
+        font-size: 2.5rem;
+    }
+
+    .why p{
+        font-size: 16px;
+    }
+
+    .ser-right h2{
+        font-size: 2.5rem;
+    }
+
+    .ser-right p{
+        font-size: 24px;
+    }
+
+    .grid-ser{
+        padding: 0;
+        padding-top: 2.5rem;
+    }
+
+    .aa-right{
+        padding: 3rem 2rem;
+    }
+
+    #aa .aa-right .title{
+        font-size: 4rem;
+    }
+
+    #aa .aa-right p{
+        font-size: 1.5rem;
+    }
+
+    #aa .aa-right .find button{
+        height: 55px;
+        width: 165px;
+        font-size: 22px;
+    }
+
+    footer .foot{
+        padding: 0;
+        padding-left: 5rem;
+    }
+
+    .right{
+        padding-left: 0;
+        gap: 3rem;
+    }
+
+    ul{
+        line-height: 4rem;
+    }
+
+    ul .title{
+        font-size: 2rem;
+    }
+
+    .m ul li a, .r ul li a{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    /* burger */
+    .burger{
+        display: block;
+        cursor: pointer;
+        padding-top: 1rem;
+    }
+
+    .toggle-burger .line-1{
+        transform: rotate(-45deg) translate(-5px, 7px);
+    }
+
+    .toggle-burger .line-2{
+        opacity: 0;
+    }
+
+    .toggle-burger .line-3{
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
+
+    .logo{
+        padding-top: 1.4rem;
+    }
+
+    nav{
+        position: fixed;
+        width: 50%;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #fff;
+        border-left: 1px solid var(--borderColor);
+        z-index: 9;
+        transform: translateX(100%);
+        transition: 0.3s ease-in-out;
+    }
+
+    nav ul{
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        line-height: 10px;
+    }
+
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    :root{
+        --section-padding:4rem 0;
+    }
+
+    .sec-title{
+        font-size: 2.2rem;
+        padding: 0 1rem;
+    }
+
+    .sub-title{
+        font-size: 20px;   
+    }
+
+    /* me section */
+    #me{
+        grid-template-columns: 1fr;
+        height: fit-content;    
+    }
+
+    .me-right{
+        order: -1;
+    }
+
+    .me-right img{
+        width: 100%;
+    }
+
+    .me-left{
+        text-align:start;
+        padding: 0;
+    }
+
+    #me .me-left .pre-title{
+        font-size: 20px;
+    }
+
+
+    #me .me-left .title{
+        padding: 0;
+    }
+
+    #me .me-left .sub-me{
+        padding:0;
+        padding-top: 1rem;
+        font-size: 25px;
+    }
+
+    #me .me-left .find button{
+        height: 50px;
+        width: 110px;
+        font-size: 15px;
+    }
+
+    /* service */
+    .ser-left{
+        justify-content: center;
+        padding: 1rem 0;
+    }
+
+    .ser-left img{
+        width: 70%;
+    }
+    
+    .ser-right{
+        text-align: center;
+    }
+
+    .ser-right p, .ser-right h2{
+        padding: 0;
+    }
+
+    .ser-right h2{
+        font-size: 2rem;
+    }
+
+    .ser-right p{
+        padding:1rem;
+        font-size: 22px;
+    }
+
+    /* aa */
+    #aa{
+        padding: 2rem 0;
+    }
+
+    .aa-left img{
+        width:100%;
+    }
+    
+    /* footer */
+    footer{
+        padding: 2rem 0;
+    }
+
+    footer .foot{
+        padding: 0;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+    .l h1, .l p{
+        text-align: center;
+    }
+
+    .l p{
+        padding-right: 13px;
+    }
+
+    ul{
+        line-height: 2.5rem;
+    }
+
+    .right{
+        padding-left: 5rem;
+        padding-top: 2rem;
+    }
+
+    ul .title{
+        font-weight: 700;
+        font-size: 1rem;
+    }
+
+    .m ul li a, .r ul li a{
+        font-size: 1rem;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .pre-title{
+        font-size: 0.7rem;
+    }
+}
